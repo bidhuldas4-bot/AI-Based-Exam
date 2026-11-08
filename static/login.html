@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Login</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Student Login</h1>
+
+        <p class="subtitle">
+            Enter your student details
+        </p>
+
+
+        <label>Student ID</label>
+
+        <input
+            type="text"
+            id="studentId"
+            placeholder="Example: ST001"
+        >
+
+
+        <label>Student Name</label>
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Enter your name"
+        >
+
+
+        <button
+            onclick="studentLogin()"
+            class="btn"
+        >
+            Enter Exam
+        </button>
+
+
+        <div
+            id="loginMessage"
+            class="message"
+        ></div>
+
+
+        <div class="navigation">
+
+            <a href="/teacher">
+                ← Teacher Page
+            </a>
+
+            <a href="/result">
+                View Result →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>

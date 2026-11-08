@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Teacher - Exam Application</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Teacher Exam Panel</h1>
+
+        <p class="subtitle">
+            Add questions and their correct answers
+        </p>
+
+
+        <label>Question</label>
+
+        <textarea
+            id="question"
+            placeholder="Enter the exam question..."
+        ></textarea>
+
+
+        <label>Correct Answer</label>
+
+        <textarea
+            id="correctAnswer"
+            placeholder="Enter the correct answer..."
+        ></textarea>
+
+
+        <button
+            onclick="addQuestion()"
+            class="btn"
+        >
+            Add Question
+        </button>
+
+
+        <div
+            id="teacherMessage"
+            class="message"
+        ></div>
+
+
+        <hr>
+
+
+        <h2>Teacher Questions</h2>
+
+        <div id="questionList"></div>
+
+
+        <div class="navigation">
+
+            <a href="/login">
+                Go to Student Login →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>

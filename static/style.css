@@ -1,0 +1,629 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f8fafc
+        );
+
+    min-height: 100vh;
+
+    color: #1e293b;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(0, 0, 0, 0.10);
+}
+
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+h1 {
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: #1e293b;
+
+    font-size: 32px;
+}
+
+
+h2 {
+    color: #334155;
+
+    margin-top: 25px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #64748b;
+
+    margin-top: 5px;
+
+    margin-bottom: 30px;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    color: #334155;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   INPUT + TEXTAREA
+===================================================== */
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+
+    transition: 0.2s;
+
+    background: #ffffff;
+}
+
+
+input {
+    height: 50px;
+}
+
+
+input:focus,
+textarea:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(99, 102, 241, 0.12);
+}
+
+
+textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn:hover {
+    background: #4338ca;
+
+    transform: translateY(-1px);
+}
+
+
+.submit-btn {
+    background: #059669;
+}
+
+
+.submit-btn:hover {
+    background: #047857;
+}
+
+
+/* =====================================================
+   MESSAGES
+===================================================== */
+
+.message {
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    min-height: 20px;
+}
+
+
+/* =====================================================
+   HORIZONTAL LINE
+===================================================== */
+
+hr {
+    border: 0;
+
+    border-top:
+        1px solid #e2e8f0;
+
+    margin: 30px 0;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navigation {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.navigation a {
+    color: #4f46e5;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   HOME PAGE
+===================================================== */
+
+.home-buttons {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 35px;
+}
+
+
+.home-button {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100px;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+
+    box-shadow:
+        0 5px 15px
+        rgba(79, 70, 229, 0.20);
+}
+
+
+.home-button:hover {
+    background: #4338ca;
+
+    transform: translateY(-3px);
+}
+
+
+.api-link {
+    text-align: center;
+
+    color: #64748b;
+
+    margin-top: 25px;
+}
+
+
+.api-link a {
+    color: #4f46e5;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   TEACHER QUESTIONS
+===================================================== */
+
+.teacher-question {
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin-top: 15px;
+}
+
+
+.teacher-question-number {
+    color: #4f46e5;
+
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+
+.teacher-question p {
+    margin-bottom: 0;
+
+    color: #334155;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   EXAM CARD
+===================================================== */
+
+.exam-card {
+    max-width: 900px;
+}
+
+
+/* =====================================================
+   STUDENT INFORMATION
+===================================================== */
+
+.student-info {
+    background: #eef2ff;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 25px;
+
+    color: #3730a3;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   EXAM QUESTION
+===================================================== */
+
+.exam-question {
+    background: #ffffff;
+
+    border: 1px solid #dbeafe;
+
+    border-left: 5px solid #4f46e5;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0, 0, 0, 0.04);
+}
+
+
+.question-number {
+    color: #4f46e5;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+
+
+.question-text {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #1e293b;
+
+    margin-bottom: 15px;
+
+    line-height: 1.6;
+}
+
+
+.answer-box {
+    min-height: 130px;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.loading {
+    text-align: center;
+
+    color: #64748b;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+   RESULT BOX
+===================================================== */
+
+.result-box {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    display: none;
+}
+
+
+.result-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 14px 0;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    font-size: 17px;
+}
+
+
+.result-row:last-child {
+    border-bottom: none;
+}
+
+
+.result-label {
+    font-weight: bold;
+
+    color: #475569;
+}
+
+
+.result-value {
+    color: #1e293b;
+
+    font-weight: bold;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   FINAL SCORE
+===================================================== */
+
+.final-score {
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding: 20px 10px;
+    }
+
+
+    .card {
+        padding: 22px;
+    }
+
+
+    h1 {
+        font-size: 26px;
+    }
+
+
+    .home-buttons {
+        grid-template-columns: 1fr;
+    }
+
+
+    .navigation {
+        flex-direction: column;
+    }
+
+
+    .navigation a {
+        text-align: center;
+    }
+
+
+    .result-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+
+    .result-value {
+        text-align: left;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .card {
+        padding: 18px;
+    }
+
+
+    h1 {
+        font-size: 23px;
+    }
+
+
+    .home-button {
+        font-size: 16px;
+
+        min-height: 80px;
+    }
+
+}

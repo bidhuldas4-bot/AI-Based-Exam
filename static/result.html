@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Exam Result</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Exam Result</h1>
+
+        <p class="subtitle">
+            Enter your Student ID
+        </p>
+
+
+        <label>Student ID</label>
+
+        <input
+            type="text"
+            id="resultStudentId"
+            placeholder="Example: ST001"
+        >
+
+
+        <button
+            onclick="getResult()"
+            class="btn"
+        >
+            View Result
+        </button>
+
+
+        <div
+            id="resultMessage"
+            class="message"
+        ></div>
+
+
+        <div
+            id="resultBox"
+            class="result-box"
+        ></div>
+
+
+        <div class="navigation">
+
+            <a href="/login">
+                ← Student Login
+            </a>
+
+            <a href="/teacher">
+                Teacher Page
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
